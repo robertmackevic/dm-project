@@ -4,7 +4,7 @@ scale_5_positive = {
     "Strongly Negative": 1,
     "Somewhat Negative": 2,
     "Neither positive nor negative": 3,
-    "Somewhat Positive": 2,
+    "Somewhat Positive": 4,
     "Strongly Positive": 5,
 }
 
@@ -57,26 +57,25 @@ scale_6_improve = {
 }
 
 scale_11_productivityChange = {
-    "I’m 50% less productive when working remotely (or worse)": 1,
-    "I’m 40% less productive when working remotely": 2,
-    "I’m 30% less productive when working remotely": 3,
-    "I’m 20% less productive when working remotely": 4,
-    "I’m 10% less productive when working remotely": 5,
+    "Im 50 less productive when working remotely (or worse)": 1,
+    "Im 40 less productive when working remotely": 2,
+    "Im 30 less productive when working remotely": 3,
+    "Im 20 less productive when working remotely": 4,
+    "Im 10 less productive when working remotely": 5,
     "My productivity is about the same when I work remotely": 6,
-    "I’m 10% more productive when working remotely": 7,
-    "I’m 20% more productive when working remotely": 8,
-    "I’m 30% more productive when working remotely": 9,
-    "I’m 40% more productive when working remotely": 10,
-    "I’m 50% more productive when working remotely (or more)": 11,
+    "Im 10 more productive when working remotely": 7,
+    "Im 20 more productive when working remotely": 8,
+    "Im 30 more productive when working remotely": 9,
+    "Im 40 more productive when working remotely": 10,
+    "Im 50 more productive when working remotely (or more)": 11,
 }
 
 if __name__ == "__main__":
-    file_path = './2021_rws.csv'
+    file_path = './data.csv'
 
-    df = pd.read_csv(file_path, encoding='cp1252')
+    df = pd.read_csv(file_path)
 
     for column in df.columns:
-        print(f"Processing Column: {column}")
         column_values = set(df[column].dropna().unique())  # Drop NaN for comparison
         if column_values.issubset(set(scale_5_agree.keys())):
             df[column] = df[column].map(scale_5_agree)
