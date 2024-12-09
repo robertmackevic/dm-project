@@ -1,4 +1,4 @@
-Age,Gender,Experience,Industry,FamilyStatus,Location,InterpersonalRelationships,Commuting,WorkEfficiency,Housework,FamilyTime,Sleep,SocialIsolation,EconomicResources,RemoteWorkCompatability,Motivation,PhysicalEnvironment,Wellbeing,MentalHealth,PhysicalHealth,Sociability,ManagingRole,RemoteWorkExtent,RemoteWorkSupport,Productivity
+Age,Gender,Experience,Industry,FamilyStatus,Location,ReducedPromotion,CommuteTimeDiff,WorkTimeDiff,HouseworkTimeDiff,FamilyTimeDiff,SleepTimeDiff,SocialIsolation,ExtraCosts,WorkCompatibility,Motivation,HomeEnvironment,Wellbeing,MentalHealth,PhysicalActivity,Sociability,ManagingRole,RemoteWorkExtent,RemoteWorkSupport,Productivity
 45,Male,3,Other Services,Couple with dependent children,Metro,1,-2.0,2.0,0.0,0.0,0.0,3,3,3,2,2,3,3,3,2,No,2,3,3
 50,Male,3,Construction,Couple with no dependent children,Metro,2,-1.5,2.0,2.0,-2.0,-0.5,3,3,2,2,2,2,2,2,2,No,1,2,3
 43,Female,1,Financial and Insurance,Single person,Metro,1,-2.0,0.0,1.0,1.0,0.0,2,2,1,3,3,2,3,2,1,No,3,3,2
